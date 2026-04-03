@@ -76,15 +76,9 @@ Make sure you have both **Node.js** and **Python (v3.11+)** installed on your sy
 ---
 
 ## ☁️ Deployment (Render)
-This project is configured out of the box for free deployment on [Render](https://render.com).
+This project is configured out of the box for free deployment on [Render](https://geotrack-app.onrender.com/).
 
-1. Push your code to your GitHub repo.
-2. Link your repo in the Render dashboard and create a **Web Service**.
-3. Set your **Build Command**: `./build.sh`
-4. Set your **Start Command**: `uv run gunicorn app:app -b 0.0.0.0:$PORT`
-5. *Deploy!* 🎉
 
----
 
 <div align="center">
   <sub>Built with ❤️ by Legends0024.</sub>
