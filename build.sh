@@ -10,7 +10,8 @@ pip install uv
 uv sync
 
 echo "Installing Node dependencies..."
-# Render environment usually supports Node.js if you add a build script constraint
+# Remove package-lock.json to fix Vite/Rollup cross-platform binary bugs on Render (Linux)
+rm -f package-lock.json
 npm install
 
 echo "Building React Frontend..."
