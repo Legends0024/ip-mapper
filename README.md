@@ -1,85 +1,98 @@
-<div align="center">
-  <br />
-    <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/globe-2.svg" alt="logo" width="80" height="auto" />
-  <br />
+# 🌍 GeoTrack — IP Geolocation & CNIP Intelligence
 
-  <h1>🌍 GeoTrack</h1>
-  
-  <p>
-    <strong>A high-performance IP geolocation tracker built with React, Vite, and Flask.</strong>
-  </p>
+> **Prototype v2.1** — A professional-grade cybersecurity dashboard and **CNIP Tutor** for real-time IP protocol analysis and geolocation.
 
-  <h3>🚀 <a href="https://geotrack-app.onrender.com/">Live Demo</a></h3>
-
-  <p>
-    <a href="https://react.dev/"><img src="https://img.shields.io/badge/Frontend-React%2018-blue?style=for-the-badge&logo=react" alt="React" /></a>
-    <a href="https://vitejs.dev/"><img src="https://img.shields.io/badge/Build-Vite-646CFF?style=for-the-badge&logo=vite" alt="Vite" /></a>
-    <a href="https://flask.palletsprojects.com/"><img src="https://img.shields.io/badge/Backend-Flask-black?style=for-the-badge&logo=flask" alt="Flask" /></a>
-    <a href="https://leafletjs.com/"><img src="https://img.shields.io/badge/Maps-Google%20Tiles-success?style=for-the-badge&logo=googlemaps" alt="Maps" /></a>
-  </p>
-</div>
-
-<br />
-
-## 🪐 Overview
-GeoTrack is an incredibly snappy, full-stack web application designed to instantly locate and visualize the origin of any IP Address on an interactive globe mapping system.
-
-Powered by a dual **React UI** and robust **Python Flask** architecture, this tool bypasses complex networking restrictions to pull real-time ASN and geological data, cleanly plotting it over dynamic Google Map tiles!
-
-### ✨ Key Features
-- ⚡ **Instant IP Tracking:** Type any IP to grab exact longitude/latitude structures.
-- 🗺️ **Interactive Interface:** Seamless map generation pulling active coordinate grids in real-time.
-- 💻 **"Track My IP":** Automatically detects and tracks your personal public IP dynamically.
-- 🛡️ **Robust Python Core:** Utilizes an integrated backend `api/track` gateway to abstract network calls securely.
-- 🎨 **Glassmorphism Aesthetic:** Completely customized dark-mode aesthetic with vibrant UI cards.
+![Status](https://img.shields.io/badge/Status-Academic_Prototype-blueviolet?style=flat-square)
+![Stack](https://img.shields.io/badge/Stack-React%20+%20Flask%20+%20SQLite-blue?style=flat-square)
+![Net-Intelligence](https://img.shields.io/badge/Intelligence-AS_%7C_BGP_%7C_L3_Binary-emerald?style=flat-square)
 
 ---
 
-## 🛠️ Tech Stack
-| Domain | Technology |
-|---|---|
-| **Frontend Framework** | React (v18) + TypeScript |
-| **Styling** | TailwindCSS |
-| **Mapping Engine** | Leaflet + React-Leaflet |
-| **Icons & Animations** | Lucide React, Framer Motion |
-| **Backend API** | Python Flask (Served via Gunicorn) |
-| **Package Management** | `uv` (Python), `npm` (Node.js) |
+## ✨ Overview
+
+GeoTrack is a full-stack intelligence platform built for **Computer Networks and Internet Protocols (CNIP)** students and security professionals. It provides deep-level IP address analysis, interactive high-contrast mapping, and a built-in AI tutor to explain complex networking concepts.
 
 ---
 
-## 🚀 Getting Started Locally
+## 🎓 Academic Features (CNIP Focus)
+
+- **Layer 3 Analysis:** View IP addresses in **32-bit Binary** and **Hexadecimal** formats.
+- **Address Classification:** Automatic identification of IPv4 Classes (A, B, C, D, E).
+- **RIR Mapping:** Real-time identification of Regional Internet Registries (APNIC, ARIN, RIPE, etc.).
+- **NetGuide Chatbot:** An interactive tutor that explains concepts like BGP, Autonomous Systems (AS), and the OSI Model.
+- **Reverse DNS:** Integrated PTR lookups to find hostnames from IP addresses.
+
+---
+
+## 🚀 Key Features
+
+### 🤖 NetGuide — Interactive Tutor
+- Floating dashboard chatbot with a pre-trained networking knowledge base.
+- Explains specific results (e.g., "Why is this Class B?") with a single click.
+- Guides users through project features and networking theory.
+
+### 🗺️ High-Contrast Interactive Map
+- **Light Voyager Theme:** Designed for perfect visibility against the dark dashboard UI.
+- Supports multiple markers, fly-to animations, and side-by-side IP comparisons.
+
+### 🔍 Advanced IP Lookup
+- Instant geolocation (Country, City, ISP, AS Number).
+- Heuristic-based **Risk Detection** for VPNs, Proxies, and Hosting providers.
+- Persistence via SQLite for all search history and analytics.
+
+---
+
+## 🏗️ Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| **Frontend** | React 18, Vite, Tailwind CSS, Framer Motion |
+| **Logic** | Python Flask, Flask-CORS, `ipaddress` library |
+| **Knowledge** | Custom Rule-Based CNIP Matcher |
+| **Mapping** | Leaflet + CartoDB Voyager (Light) |
+| **Database** | SQLite (Persistent Storage) |
+
+---
+
+## ⚙️ Getting Started
 
 ### Prerequisites
-Make sure you have both **Node.js** and **Python (v3.11+)** installed on your system. 
+- **Node.js** 18+
+- **Python** 3.11+
 
-### Development Setup
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Legends0024/ip-mapper.git
-   cd ip-mapper
-   ```
+### Setup
 
-2. **Start the Frontend UI** (Terminal 1)
-   ```bash
-   npm install
-   npm run dev
-   ```
+```bash
+# 1. Install Dependencies
+npm install
+pip install flask flask-cors requests gunicorn
 
-3. **Start the Backend Server** (Terminal 2)
-   ```bash
-   uv sync
-   uv run python app.py
-   ```
+# 2. Run Backend
+python app.py
 
-4. Head over to **`http://localhost:5173`** in your browser!
+# 3. Run Frontend
+npm run dev
+```
 
 ---
 
 ## ☁️ Deployment (Render)
 This project is configured out of the box for free deployment on [Render](https://geotrack-app.onrender.com/).
 
+## 🎨 Design Philosophy
+
+- **High Contrast:** Ultra-light map tiles (CARTO Positron) on a deep navy glassmorphism dashboard.
+- **Educational UI:** Monospace terminal-style analysis for protocol data.
+- **Responsive:** Fluid animations and layout for all screen sizes.
 
 
-<div align="center">
-  <sub>Built with ❤️ by Legends0024.</sub>
-</div>
+## 📝 Notes
+
+- **Free Tier:** Uses `ip-api.com` (45 requests/min limit).
+- **Prototypes:** This is an academic project designed for demonstration of networking principles.
+
+---
+
+## 👤 Author
+
+**Manav** — Full-Stack Developer & CNIP Student

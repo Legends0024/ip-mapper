@@ -8,4 +8,13 @@ wheels/
 
 # Virtual environments
 .venv
-node_modules
+node_modules/
+
+# Database and sensitive data
+geotrack.db
+.env
+*.log
+
+# Build artifacts
+dist/
+build/
